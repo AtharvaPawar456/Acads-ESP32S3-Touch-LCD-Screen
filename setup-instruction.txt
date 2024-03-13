@@ -1,0 +1,15 @@
+- copy paste all the arduino libraries in your arduino libraries folder
+
+- open the 4.3-inch_Squareline_Demo folder
+
+- then open : 4.3-inch_Squareline_Demo.ino
+
+- compile the code : check any errors...
+
+- before uploading the code set lcd in programming mode
+
+- press boot btn and hold then simple click on RESET btn then release the boot btn
+
+- the screen is set to programming mode
+
+- upload the code 
