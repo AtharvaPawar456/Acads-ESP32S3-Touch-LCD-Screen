@@ -20,6 +20,7 @@ void ui_Screen1_screen_init(void);
 
 void updatesubjects(lv_obj_t *label, const char *text);
 
+
 extern lv_obj_t * ui_Screen1;
 extern lv_obj_t * ui_yearName;
 extern lv_obj_t * ui_Label18;
