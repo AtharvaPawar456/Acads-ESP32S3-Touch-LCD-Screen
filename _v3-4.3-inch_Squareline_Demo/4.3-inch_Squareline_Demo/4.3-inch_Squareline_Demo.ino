@@ -5,8 +5,11 @@
 // const char *ssid = "shsopf";
 // const char *password = "prayer@821";
 
-const char *ssid = "MAHAKAL";
-const char *password = "sateri456";
+// const char *ssid = "MAHAKAL";
+// const char *password = "sateri456";
+
+const char *ssid = "VIT";
+const char *password = "Eap610@2023";
 
 int counter = 99;
 int invcounter = 0;
@@ -171,8 +174,10 @@ String getTeacherData(const char *sheetName) {
   String url = "https://8649e09f-d977-4a7a-b90e-dc833304ef8a-00-20hj2r0n7o64a.pike.replit.dev/getdata/" + String(sheetName);
   HTTPClient http;
 
-  // Serial.print("Sending GET request to: ");
-  // Serial.println(url);
+  Serial.print("Sending GET request to: ");
+  Serial.println(url);
+
+  http.setTimeout(10000); // Set timeout to 10 seconds
 
   if (http.begin(url)) {
     int httpCode = http.GET();
@@ -379,7 +384,7 @@ void loop()
     if (sheetCounter != numSheetNames) {sheetCounter++;}
     if (sheetCounter == numSheetNames) {sheetCounter = 0;}
     viewSheet = sheetNames[sheetCounter].c_str();
-    delay(40);
+    delay(20);
   }
 
   if (Xaxis >= 415 && Xaxis <= 450 && Yaxis >= 207 && Yaxis <= 232) {
@@ -391,7 +396,7 @@ void loop()
 
     viewSheet = privsheetNames[privsheetCounter].c_str();
 
-    delay(40);
+    delay(20);
   }
 
 
